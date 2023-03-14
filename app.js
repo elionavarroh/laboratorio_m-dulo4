@@ -21,26 +21,18 @@ var showresultmultiply = () => document.getElementById("result").innerText = mul
 var showresultdividy = () => document.getElementById("result").innerText = dividy();
 
 //EVENTOS
-var handleinputchange = (event) => {
-    document.getElementById("number1").addEventListener("click", handleinputchange);
-}
-
-var handleinputchange = (event) => {
-    document.getElementById("number2").addEventListener("click", handleinputchange);
+var handleButtonClick = () => {
+    document.getElementById("sum").addEventListener("click", showresultsum);
 }
 
 var handleButtonClick = () => {
-    document.getElementById("sum").addEventListener("click", handleButtonClick);
+    document.getElementById("rest").addEventListener("click", showresultrest);
 }
 
 var handleButtonClick = () => {
-    document.getElementById("rest").addEventListener("click", handleButtonClick);
+    document.getElementById("multiply").addEventListener("click", showresultmultiply);
 }
 
 var handleButtonClick = () => {
-    document.getElementById("multiply").addEventListener("click", handleButtonClick);
-}
-
-var handleButtonClick = () => {
-    document.getElementById("dividy").addEventListener("click", handleButtonClick);
+    document.getElementById("dividy").addEventListener("click", showresultdividy);
 }
