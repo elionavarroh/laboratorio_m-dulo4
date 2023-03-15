@@ -1,6 +1,6 @@
 //INPUTS
-var numberA = () => parseInt(document.getElementById("input-number1").value);
-var numberB = () => parseInt(document.getElementById("input-number2").value);
+var numberA = () => parseInt(document.getElementById("number1").value);
+var numberB = () => parseInt(document.getElementById("number2").value);
 
 //FUNCIONES DE LAS OPERACIONES
 var sum = () => numberA() + numberB();
@@ -32,8 +32,10 @@ document.getElementById("dividy").addEventListener("click", showresultdividy);
 
 
 //PARTE EXTRA - SI ALGUNO DE LOS OPERADORES ES VACÍO, MUESTRA COMO RESULTADO "ERROR"
-//if (numberA >=0 && numberB >= 0) {
-//    document.getElementById("sum").innerText;
-//} else { 
-//    showresultsum();
-//}
+function ifsum () {
+    if (numberA >=0  && numberB >= 0) {
+        document.getElementById("sum").innerText
+    } else { 
+        document.getElementById("result").innerText = "Error, hay que introducir dos números para realizar la operación";
+    }
+}
