@@ -21,21 +21,15 @@ var showresultmultiply = () => document.getElementById("result").innerText = mul
 var showresultdividy = () => document.getElementById("result").innerText = dividy();
 
 //EVENTOS
-var handleButtonClick = () => {
-    document.getElementById("sum").addEventListener("click", showresultsum);
-}
 
-var handleButtonClick = () => {
-    document.getElementById("rest").addEventListener("click", showresultrest);
-}
+document.getElementById("sum").addEventListener("click", showresultsum);
 
-var handleButtonClick = () => {
-    document.getElementById("multiply").addEventListener("click", showresultmultiply);
-}
+document.getElementById("rest").addEventListener("click", showresultrest);
 
-var handleButtonClick = () => {
-    document.getElementById("dividy").addEventListener("click", showresultdividy);
-}
+document.getElementById("multiply").addEventListener("click", showresultmultiply);
+
+document.getElementById("dividy").addEventListener("click", showresultdividy);
+
 
 //PARTE EXTRA - SI ALGUNO DE LOS OPERADORES ES VACÍO, MUESTRA COMO RESULTADO "ERROR"
 //if (numberA >=0 && numberB >= 0) {
