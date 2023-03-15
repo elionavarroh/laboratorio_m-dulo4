@@ -38,8 +38,8 @@ var handleButtonClick = () => {
 }
 
 //PARTE EXTRA - SI ALGUNO DE LOS OPERADORES ES VACÍO, MUESTRA COMO RESULTADO "ERROR"
-//if (numberA, numberB != 0) {
-//    document.getElementById("result").innerText = "Error, tiene que seleccionar dos números para poder realizar la cuenta";
-//} else {
+//if (numberA >=0 && numberB >= 0) {
+//    document.getElementById("sum").innerText;
+//} else { 
 //    showresultsum();
 //}
