@@ -12,16 +12,39 @@ var multiply = () => numberA() * numberB();
 var dividy = () => numberA() / numberB();
 
 //RESULTADOS
-var showresultsum = () => document.getElementById("result").innerText = sum();
+var showresultsum = () => { 
+    if (isNaN(numberA()) || isNaN(numberB())) {
+        document.getElementById("result").innerText = "Error, hay que introducir dos números positivos para realizar la operación";
+    } else { 
+        document.getElementById("result").innerText = sum();
+    }
+  };
 
-var showresultrest = () => document.getElementById("result").innerText = rest();
+var showresultrest = () => { 
+    if (isNaN(numberA()) || isNaN(numberB())) {
+        document.getElementById("result").innerText = "Error, hay que introducir dos números positivos para realizar la operación";
+    } else { 
+        document.getElementById("result").innerText = rest();
+    }
+  };
 
-var showresultmultiply = () => document.getElementById("result").innerText = multiply();
+var showresultmultiply = () => { 
+    if (isNaN(numberA()) || isNaN(numberB())) {
+        document.getElementById("result").innerText = "Error, hay que introducir dos números positivos para realizar la operación";
+    } else { 
+        document.getElementById("result").innerText = multiply();
+    }
+  };
 
-var showresultdividy = () => document.getElementById("result").innerText = dividy();
+var showresultdividy = () => { 
+    if (isNaN(numberA()) || isNaN(numberB())) {
+        document.getElementById("result").innerText = "Error, hay que introducir dos números positivos para realizar la operación";
+    } else { 
+        document.getElementById("result").innerText = dividy();
+    }
+  };
 
 //EVENTOS
-
 document.getElementById("sum").addEventListener("click", showresultsum);
 
 document.getElementById("rest").addEventListener("click", showresultrest);
@@ -29,13 +52,3 @@ document.getElementById("rest").addEventListener("click", showresultrest);
 document.getElementById("multiply").addEventListener("click", showresultmultiply);
 
 document.getElementById("dividy").addEventListener("click", showresultdividy);
-
-
-//PARTE EXTRA - SI ALGUNO DE LOS OPERADORES ES VACÍO, MUESTRA COMO RESULTADO "ERROR"
-function ifsum () {
-    if (numberA >=0  && numberB >= 0) {
-        document.getElementById("sum").innerText
-    } else { 
-        document.getElementById("result").innerText = "Error, hay que introducir dos números para realizar la operación";
-    }
-}
