@@ -1,15 +1,15 @@
 //INPUTS
-var numberA = () => parseInt(document.getElementById(input-number1).value);
-var numberB = () => parseInt(document.getElementById(input-number2).value);
+var numberA = () => parseInt(document.getElementById("input-number1").value);
+var numberB = () => parseInt(document.getElementById("input-number2").value);
 
 //FUNCIONES DE LAS OPERACIONES
-var sum = (numberA, numberB) => numberA() + numberB();
+var sum = () => numberA() + numberB();
 
-var rest = (numberA, numberB) => numberA() - numberB();
+var rest = () => numberA() - numberB();
 
-var multiply = (numberA, numberB) => numberA() * numberB();
+var multiply = () => numberA() * numberB();
 
-var dividy = (numberA, numberB) => numberA() / numberB();
+var dividy = () => numberA() / numberB();
 
 //RESULTADOS
 var showresultsum = () => document.getElementById("result").innerText = sum();
@@ -36,3 +36,10 @@ var handleButtonClick = () => {
 var handleButtonClick = () => {
     document.getElementById("dividy").addEventListener("click", showresultdividy);
 }
+
+//PARTE EXTRA - SI ALGUNO DE LOS OPERADORES ES VACÍO, MUESTRA COMO RESULTADO "ERROR"
+//if (numberA, numberB != 0) {
+//    document.getElementById("result").innerText = "Error, tiene que seleccionar dos números para poder realizar la cuenta";
+//} else {
+//    showresultsum();
+//}
